@@ -5,25 +5,29 @@
     <main class="grid sm:grid-cols-2">
         <div class="max-sm:hidden my-auto mx-auto w-full md:w-96 box-border">
             <ul class="grid grid-cols-6 grid-rows-12 h-72 gap-1 p-4 md:pl-10">
-                <RouterLink to="/"
+                <RouterLink to="/" activeClass="border-indigo-500"
+                exact-active-class="bg-neutral"
                     class="bg-primary-content transition-colors ease  duration-300 rounded-md grid place-items-center  col-span-2 row-span-6 btn-ghost">
                     <li>
-                        <font-awesome-icon icon="fa-solid fa-house" size="xl"/> 
+                        <font-awesome-icon icon="fa-solid fa-house" size="xl" />
                     </li>
                 </RouterLink>
                 <RouterLink to="/about"
+                activeClass="border-indigo-500"  exact-active-class="bg-neutral"
                     class="bg-primary-content btn-ghost transition-colors ease  duration-300 rounded-md grid place-items-center col-span-4 row-span-3">
                     <li>
                         About me
                     </li>
                 </RouterLink>
                 <RouterLink to="/list-portofolio"
+                activeClass="border-indigo-500"  exact-active-class="bg-neutral"
                     class="bg-primary-content transition-colors ease  duration-300 rounded-md grid place-items-center  col-span-4 row-span-3 btn-ghost">
                     <li>
                         Portofolio
                     </li>
                 </RouterLink>
                 <RouterLink to="/experience"
+                activeClass="border-indigo-500"  exact-active-class="bg-neutral"
                     class="bg-primary-content transition-colors ease  duration-300 rounded-md grid place-items-center col-span-6 row-span-3 btn-ghost">
                     <li>
                         Experience
@@ -46,4 +50,6 @@
 
 <script setup>
 import NavbarComponent from '@/components/navigation/NavbarComponent.vue';
+import { ref } from 'vue';
+
 </script>
